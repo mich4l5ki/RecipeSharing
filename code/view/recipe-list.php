@@ -4,7 +4,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <link rel="stylesheet" type="text/css" href="<?= CSS_URL . "style.css" ?>">
-<meta charset="UTF-8" />
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 <title>Recipe List</title>
 
 <?php
@@ -19,7 +19,7 @@ if (!$loggedIn) {
     <h1 class="text-center mb-5">All Recipes</h1>
     <div class="row">
         <?php foreach ($recipes as $recipe): ?>
-            <div class="col-md-4 mb-4">
+            <div class="col-12 col-md-4 mb-4">
                 <div class="card h-100">
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title text-center"><?= htmlspecialchars($recipe['title']) ?></h5>
